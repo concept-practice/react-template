@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import '../../node_modules/bulma/css/bulma.min.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
