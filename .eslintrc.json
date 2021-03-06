@@ -1,0 +1,9 @@
+{
+	"overrides": [
+		{
+            "files": ["**/*.ts?(x)"],
+			"extends": ["react-app", "prettier", "plugin:prettier/recommended"],
+			"rules": {}
+		}
+	]
+}
