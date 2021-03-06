@@ -6,12 +6,12 @@ module.exports = {
 		browser: true,
 	},
 	extends: [
-		'eslint:recommended',
 		'plugin:react/recommended',
-		'prettier',
-		'plugin:jest/recommended',
 		'plugin:@typescript-eslint/recommended',
+		'eslint:recommended',
+		'prettier',
 		'plugin:prettier/recommended',
+		'plugin:jest/recommended',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -35,7 +35,6 @@ module.exports = {
 		'no-duplicate-imports': 'error',
 		'max-classes-per-file': ['error', 1],
 		'no-magic-numbers': 'off',
-		'no-undefined': 'off',
 		'no-use-before-define': ['error', { functions: true, classes: true }],
 		'prefer-const': [
 			'error',
