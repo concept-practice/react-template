@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
-import '../../node_modules/bulma/css/bulma.min.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Paths from '../common/routing/Paths';
+import React from "react";
+import "./App.css";
+import "../../node_modules/bulma/css/bulma.min.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Paths from "../common/routing/Paths";
 
 const App: React.FC = () => {
 	return (

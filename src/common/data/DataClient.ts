@@ -1,8 +1,8 @@
-import axios, { AxiosInstance, AxiosResponse } from 'axios';
+import axios, { AxiosInstance, AxiosResponse } from "axios";
 
 export default class DataClient {
 	private static axios: AxiosInstance = axios.create({
-		baseURL: 'https://localhost:44389/api',
+		baseURL: "https://localhost:44389/api",
 	});
 
 	public static async Get<T>(uri: string): Promise<AxiosResponse<T>> {
