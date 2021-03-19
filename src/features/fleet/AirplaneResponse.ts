@@ -3,7 +3,7 @@ export default class AirplaneResponse {
 	public manufacturer: string;
 	public model: string;
 
-	constructor() {
+	public constructor() {
 		this.id = 'a18db9s';
 		this.manufacturer = 'Boeing';
 		this.model = '737-8';

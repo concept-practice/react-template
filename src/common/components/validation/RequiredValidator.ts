@@ -2,14 +2,15 @@ import IValidator from './IValidator';
 import { ValidatorType } from './ValidatorType';
 
 export default class RequiredValidator implements IValidator {
-	Type(): ValidatorType {
+	public Type(): ValidatorType {
 		return ValidatorType.Required;
 	}
-	ErrorMessage(): string {
+
+	public ErrorMessage(): string {
 		return 'The input must have a value.';
 	}
 
-	IsValid(value: string): boolean {
+	public IsValid(value: string): boolean {
 		return value !== null && value !== undefined && value !== '';
 	}
 }

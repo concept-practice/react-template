@@ -8,21 +8,21 @@ export default class ViewModelField {
 	private validators: Array<IValidator>;
 	private inputType: InputType;
 
-	constructor(value: string, inputType: InputType, validators: Array<IValidator>) {
+	public constructor(value: string, inputType: InputType, validators: Array<IValidator>) {
 		this.value = value;
 		this.validators = validators;
 		this.inputType = inputType;
 	}
 
-	get Value(): string {
+	public get Value(): string {
 		return this.value;
 	}
 
-	set SetValue(value: string) {
+	public set SetValue(value: string) {
 		this.value = value;
 	}
 
-	get InputType(): InputType {
+	public get InputType(): InputType {
 		return this.inputType;
 	}
 

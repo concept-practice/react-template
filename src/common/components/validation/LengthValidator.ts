@@ -5,12 +5,12 @@ export default class LengthValidator implements IValidator {
 	private minimum: number;
 	private maximum: number;
 
-	constructor(minimum: number = 0, maximum: number = 0) {
+	public constructor(minimum: number = 0, maximum: number = 0) {
 		this.minimum = minimum;
 		this.maximum = maximum;
 	}
 
-	Type(): ValidatorType {
+	public Type(): ValidatorType {
 		return ValidatorType.Length;
 	}
 
