@@ -1,20 +1,24 @@
 import React from 'react';
 import './App.css';
-import '../../node_modules/bulma/css/bulma.min.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import '../../node_modules/bulma/bulma.sass';
+import { useRoutes } from 'react-router-dom';
 import Paths from '../common/routing/Paths';
+import Home from '../features/home/Home';
 
 const App: React.FC = () => {
+	const paths = useRoutes([
+		{
+			path: Paths.Home,
+			element: <Home />,
+		},
+	]);
+
 	return (
-		<BrowserRouter>
+		<React.Fragment>
 			<main aria-label="main" role="main">
-				<Switch>
-					{Paths.AllPaths().map((path, index) => (
-						<Route key={index + path.PathName} path={path.Path} component={path.Component}></Route>
-					))}
-				</Switch>
+				{paths}
 			</main>
-		</BrowserRouter>
+		</React.Fragment>
 	);
 };
 
