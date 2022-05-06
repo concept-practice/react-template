@@ -6,6 +6,9 @@
     "dbaeumer.vscode-eslint",
     "orta.vscode-jest",
     "eamodio.gitlens",
-    "zignd.html-css-class-completion"
+    "zignd.html-css-class-completion",
+    "deque-systems.vscode-axe-linter",
+    "editorconfig.editorconfig",
+    "aaron-bond.better-comments"
   ]
 }
