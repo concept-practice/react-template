@@ -4,6 +4,7 @@
     "plugin:jsx-a11y/strict",
     "plugin:compat/recommended",
     "react-app/jest",
+    "plugin:jest/recommended",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
     "plugin:prettier/recommended",

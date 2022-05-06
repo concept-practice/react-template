@@ -13,6 +13,6 @@ describe("App", () => {
 
     fireEvent.click(screen.getByText(/Increase/i));
 
-    await screen.findByText("1");
+    expect(await screen.findByText("1")).toBeVisible();
   });
 });
