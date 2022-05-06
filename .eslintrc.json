@@ -1,0 +1,7 @@
+{
+    "extends": [
+      "react-app",
+      "plugin:jsx-a11y/strict",
+      "react-app/jest"
+    ]
+}
