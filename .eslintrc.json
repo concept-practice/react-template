@@ -1,9 +1,11 @@
 {
-    "extends": [
-      "react-app",
-      "plugin:jsx-a11y/strict",
-      "plugin:compat/recommended",
-      "react-app/jest",
-      "plugin:prettier/recommended"
-    ]
+  "extends": [
+    "react-app",
+    "plugin:jsx-a11y/strict",
+    "plugin:compat/recommended",
+    "react-app/jest",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "plugin:prettier/recommended"
+  ]
 }
