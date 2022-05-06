@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import App from "./App";
 
 describe("App", () => {
@@ -6,5 +6,13 @@ describe("App", () => {
     render(<App />);
 
     expect(screen.getByText(/Hello There!/i)).toBeInTheDocument();
+  });
+
+  it("Counter", async () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByText(/Increase/i));
+
+    await screen.findByText("1");
   });
 });

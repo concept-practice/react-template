@@ -7,7 +7,11 @@ const App: React.FC = () => {
     <div>
       <p>Hello There!</p>
       {counter}
-      <button onClick={() => setCounter(counter + 1)}>Increase</button>
+      <div>
+        <button type="button" onClick={() => setCounter(counter + 1)}>
+          Increase
+        </button>
+      </div>
     </div>
   );
 };

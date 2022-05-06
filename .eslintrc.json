@@ -6,6 +6,7 @@
     "react-app/jest",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
+    "plugin:cypress/recommended",
     "plugin:prettier/recommended"
   ]
 }
