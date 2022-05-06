@@ -1,6 +1,9 @@
 {
   "extends": [
+    "eslint:recommended",
     "react-app",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:jsx-a11y/strict",
     "plugin:compat/recommended",
     "react-app/jest",
