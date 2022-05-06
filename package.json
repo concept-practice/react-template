@@ -21,12 +21,15 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix \"src/**/*.{ts,tsx}\""
+    "lint": "eslint --fix \"src/**/*.{ts,tsx}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-compat": "^4.0.2",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.2"
+    "husky": "^7.0.0",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3"
   }
 }
