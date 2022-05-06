@@ -1,4 +1,6 @@
 {
+  "html.autoClosingTags": true,
+  "editor.linkedEditing": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.eol": "\n",
