@@ -11,6 +11,7 @@
     "editorconfig.editorconfig",
     "aaron-bond.better-comments",
     "syler.sass-indented",
-    "formulahendry.auto-rename-tag"
+    "formulahendry.auto-rename-tag",
+    "yzhang.markdown-all-in-one"
   ]
 }
