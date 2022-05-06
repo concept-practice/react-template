@@ -1,7 +1,7 @@
 {
-    "editor.formatOnSave": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-    "files.eol": "\n",
-    "editor.bracketPairColorization.enabled": true,
-	"editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.eol": "\n",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active"
 }
