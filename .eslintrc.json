@@ -2,6 +2,7 @@
     "extends": [
       "react-app",
       "plugin:jsx-a11y/strict",
+      "plugin:compat/recommended",
       "react-app/jest",
       "plugin:prettier/recommended"
     ]
