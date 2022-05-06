@@ -9,6 +9,8 @@
     "zignd.html-css-class-completion",
     "deque-systems.vscode-axe-linter",
     "editorconfig.editorconfig",
-    "aaron-bond.better-comments"
+    "aaron-bond.better-comments",
+    "syler.sass-indented",
+    "formulahendry.auto-rename-tag"
   ]
 }

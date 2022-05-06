@@ -1,3 +1,4 @@
+import "../styles/index.scss";
 import { useState } from "react";
 
 const App: React.FC = () => {
