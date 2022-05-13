@@ -2,6 +2,7 @@
   "html.autoClosingTags": true,
   "editor.linkedEditing": true,
   "editor.formatOnSave": true,
+  "files.autoSaveDelay": 5000,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.eol": "\n",
   "editor.bracketPairColorization.enabled": true,

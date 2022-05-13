@@ -1,6 +1,7 @@
 {
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "react-app",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
@@ -10,7 +11,10 @@
     "plugin:jest/recommended",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
-    "plugin:prettier/recommended",
-    "plugin:cypress/recommended"
-  ]
+    "plugin:cypress/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": [1]
+  }
 }
