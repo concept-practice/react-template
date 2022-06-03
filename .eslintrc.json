@@ -15,14 +15,5 @@
   ],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": [1]
-  },
-  "overrides": [
-    {
-      "files": ["cypress/e2e/**/*.{cy,spec}.{js,ts,jsx,tsx}"],
-      "extends": ["plugin:cypress/recommended", "plugin:prettier/recommended"],
-      "rules": {
-        "jest/expect-expect": [0]
-      }
-    }
-  ]
+  }
 }
