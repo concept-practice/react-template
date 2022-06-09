@@ -1,4 +1,5 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import App from "./App";
 
 describe("App", () => {
@@ -11,7 +12,9 @@ describe("App", () => {
   it("Counter", async () => {
     render(<App />);
 
-    fireEvent.click(screen.getByText(/Increase/i));
+    const user = userEvent.setup();
+
+    await user.click(screen.getByText(/Increase/i));
 
     expect(await screen.findByText("1")).toBeVisible();
   });
