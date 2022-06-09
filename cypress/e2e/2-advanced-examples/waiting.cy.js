@@ -26,8 +26,6 @@ context("Waiting", () => {
     cy.get(".network-btn").click();
 
     // wait for GET comments/1
-    cy.wait("@getComment")
-      .its("response.statusCode")
-      .should("be.oneOf", [200, 304]);
+    cy.wait("@getComment").its("response.statusCode").should("be.oneOf", [200, 304]);
   });
 });

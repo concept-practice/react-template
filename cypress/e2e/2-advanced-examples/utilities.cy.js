@@ -18,10 +18,7 @@ context("Utilities", () => {
     // https://on.cypress.io/$
     let $li = Cypress.$(".utility-jquery li:first");
 
-    cy.wrap($li)
-      .should("not.have.class", "active")
-      .click()
-      .should("have.class", "active");
+    cy.wrap($li).should("not.have.class", "active").click().should("have.class", "active");
   });
 
   it("Cypress.Blob - blob utilities and base64 string conversion", () => {
