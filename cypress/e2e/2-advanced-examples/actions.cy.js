@@ -36,7 +36,11 @@ context("Actions", () => {
 
   it(".focus() - focus on a DOM element", () => {
     // https://on.cypress.io/focus
-    cy.get(".action-focus").focus().should("have.class", "focus").prev().should("have.attr", "style", "color: orange;");
+    cy.get(".action-focus")
+      .focus()
+      .should("have.class", "focus")
+      .prev()
+      .should("have.attr", "style", "color: orange;");
   });
 
   it(".blur() - blur off a DOM element", () => {
@@ -62,7 +66,10 @@ context("Actions", () => {
     // https://on.cypress.io/submit
     cy.get(".action-form").find('[type="text"]').type("HALFOFF");
 
-    cy.get(".action-form").submit().next().should("contain", "Your form has been submitted!");
+    cy.get(".action-form")
+      .submit()
+      .next()
+      .should("contain", "Your form has been submitted!");
   });
 
   it(".click() - click on a DOM element", () => {
@@ -136,20 +143,34 @@ context("Actions", () => {
 
     // By default, .check() will check all
     // matching checkbox or radio elements in succession, one after another
-    cy.get('.action-checkboxes [type="checkbox"]').not("[disabled]").check().should("be.checked");
+    cy.get('.action-checkboxes [type="checkbox"]')
+      .not("[disabled]")
+      .check()
+      .should("be.checked");
 
-    cy.get('.action-radios [type="radio"]').not("[disabled]").check().should("be.checked");
+    cy.get('.action-radios [type="radio"]')
+      .not("[disabled]")
+      .check()
+      .should("be.checked");
 
     // .check() accepts a value argument
-    cy.get('.action-radios [type="radio"]').check("radio1").should("be.checked");
+    cy.get('.action-radios [type="radio"]')
+      .check("radio1")
+      .should("be.checked");
 
     // .check() accepts an array of values
-    cy.get('.action-multiple-checkboxes [type="checkbox"]').check(["checkbox1", "checkbox2"]).should("be.checked");
+    cy.get('.action-multiple-checkboxes [type="checkbox"]')
+      .check(["checkbox1", "checkbox2"])
+      .should("be.checked");
 
     // Ignore error checking prior to checking
-    cy.get(".action-checkboxes [disabled]").check({ force: true }).should("be.checked");
+    cy.get(".action-checkboxes [disabled]")
+      .check({ force: true })
+      .should("be.checked");
 
-    cy.get('.action-radios [type="radio"]').check("radio3", { force: true }).should("be.checked");
+    cy.get('.action-radios [type="radio"]')
+      .check("radio3", { force: true })
+      .should("be.checked");
   });
 
   it(".uncheck() - uncheck a checkbox element", () => {
@@ -157,10 +178,16 @@ context("Actions", () => {
 
     // By default, .uncheck() will uncheck all matching
     // checkbox elements in succession, one after another
-    cy.get('.action-check [type="checkbox"]').not("[disabled]").uncheck().should("not.be.checked");
+    cy.get('.action-check [type="checkbox"]')
+      .not("[disabled]")
+      .uncheck()
+      .should("not.be.checked");
 
     // .uncheck() accepts a value argument
-    cy.get('.action-check [type="checkbox"]').check("checkbox1").uncheck("checkbox1").should("not.be.checked");
+    cy.get('.action-check [type="checkbox"]')
+      .check("checkbox1")
+      .uncheck("checkbox1")
+      .should("not.be.checked");
 
     // .uncheck() accepts an array of values
     cy.get('.action-check [type="checkbox"]')
@@ -169,7 +196,9 @@ context("Actions", () => {
       .should("not.be.checked");
 
     // Ignore error checking prior to unchecking
-    cy.get(".action-check [disabled]").uncheck({ force: true }).should("not.be.checked");
+    cy.get(".action-check [disabled]")
+      .uncheck({ force: true })
+      .should("not.be.checked");
   });
 
   it(".select() - select an option in a <select> element", () => {
@@ -202,7 +231,9 @@ context("Actions", () => {
       .should("deep.equal", ["fr-apples", "fr-oranges", "fr-bananas"]);
 
     // assert the selected values include oranges
-    cy.get(".action-select-multiple").invoke("val").should("include", "fr-oranges");
+    cy.get(".action-select-multiple")
+      .invoke("val")
+      .should("include", "fr-oranges");
   });
 
   it(".scrollIntoView() - scroll an element into view", () => {

@@ -143,10 +143,16 @@ context("Spies, Stubs, and Clock", () => {
     expect(spy).to.be.calledWith(2, 3);
 
     // let's confirm "add" method was called with two numbers
-    expect(spy).to.be.calledWith(Cypress.sinon.match.number, Cypress.sinon.match.number);
+    expect(spy).to.be.calledWith(
+      Cypress.sinon.match.number,
+      Cypress.sinon.match.number
+    );
 
     // alternatively, provide the value to match
-    expect(spy).to.be.calledWith(Cypress.sinon.match(2), Cypress.sinon.match(3));
+    expect(spy).to.be.calledWith(
+      Cypress.sinon.match(2),
+      Cypress.sinon.match(3)
+    );
 
     // match any value
     expect(spy).to.be.calledWith(Cypress.sinon.match.any, 3);
@@ -182,16 +188,24 @@ context("Spies, Stubs, and Clock", () => {
     // you can combine several matchers using "and", "or"
     expect(spy).to.be.calledWith(
       Cypress.sinon.match.number,
-      Cypress.sinon.match(isGreaterThan(2), "> 2").and(Cypress.sinon.match(isLessThan(4), "< 4"))
+      Cypress.sinon
+        .match(isGreaterThan(2), "> 2")
+        .and(Cypress.sinon.match(isLessThan(4), "< 4"))
     );
 
     expect(spy).to.be.calledWith(
       Cypress.sinon.match.number,
-      Cypress.sinon.match(isGreaterThan(200), "> 200").or(Cypress.sinon.match(3))
+      Cypress.sinon
+        .match(isGreaterThan(200), "> 200")
+        .or(Cypress.sinon.match(3))
     );
 
     // matchers can be used from BDD assertions
-    cy.get("@add").should("have.been.calledWith", Cypress.sinon.match.number, Cypress.sinon.match(3));
+    cy.get("@add").should(
+      "have.been.calledWith",
+      Cypress.sinon.match.number,
+      Cypress.sinon.match(3)
+    );
 
     // you can alias matchers for shorter test code
     const { match: M } = Cypress.sinon;
