@@ -2,6 +2,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:promise/recommended",
     "react-app",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
@@ -14,6 +15,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "@typescript-eslint/explicit-function-return-type": [1]
+    "@typescript-eslint/explicit-function-return-type": [2],
+    "promise/prefer-await-to-then": [2]
   }
 }
