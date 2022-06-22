@@ -2,6 +2,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:unicorn/recommended",
     "plugin:promise/recommended",
     "react-app",
     "plugin:react/recommended",
@@ -16,6 +17,12 @@
   ],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": [2],
+    "unicorn/filename-case": [
+      2,
+      {
+        "case": "pascalCase"
+      }
+    ],
     "promise/prefer-await-to-then": [2]
   }
 }
