@@ -20,7 +20,13 @@
     "unicorn/filename-case": [
       2,
       {
-        "case": "pascalCase"
+        "case": "pascalCase",
+        "ignore": [
+          "\\.test\\.ts",
+          "\\.text\\.tsx",
+          "\\.spec\\.ts",
+          "\\.spec\\.tsx"
+        ]
       }
     ],
     "promise/prefer-await-to-then": [2]
