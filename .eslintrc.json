@@ -21,12 +21,13 @@
       2,
       {
         "case": "pascalCase",
-        "ignore": [
-          "\\.test\\.ts",
-          "\\.text\\.tsx",
-          "\\.spec\\.ts",
-          "\\.spec\\.tsx"
-        ]
+        "ignore": ["\\.test\\.ts", "\\.text\\.tsx", "\\.spec\\.ts", "\\.spec\\.tsx"]
+      }
+    ],
+    "unicorn/consistent-function-scoping": [
+      2,
+      {
+        "checkArrowFunctions": false
       }
     ],
     "promise/prefer-await-to-then": [2]
